@@ -1,37 +1,19 @@
-// document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
-//     let userInput = prompt("Please enter 'rainy' to start the rain animation:");
+    let userInput = prompt("Please enter 'rainy' to start the rain animation:");
 
-//     if (userInput && userInput.toLowerCase() === 'rainy') {
-//         setInterval(rain, 50);
-//     } else {
-//         alert("You didn't enter 'rainy'. The rain animation will not be shown.");
-//     }
-// });
+    if (userInput && userInput.toLowerCase() === 'rainy') {
+        setInterval(rain, 50);
+    } else {
+        alert("You didn't enter 'rainy'. The rain animation will not be shown.");
+    }
+});
 
 function randomText() {
     var text = ("rainy");
     letter =text[Math.floor(Math.random() * text.length)];
     return letter;
 }
-// function rain(){
-//     let cloud  = document.querySelector('.cloud')
-//     let e = document.createElement('div');
-//     let left = Math.floor(Math.random() * 300)
-//     let size = Math.random() * 1.5;
-//     let duration = Math.random() * 1;
-//     e.classList.add('text');
-//     cloud.appendChild(e);
-//     e.innerText = randomText();
-//     e.style.left = left + 'px';
-//     e.style.fontSize = 0.5+size+'em';
-//     e.style.animationDuration = 1+duration+'s';
-
-//     setTimeout(function() {
-//         cloud.removeChild(e)
-//     },2000)
-// }
-// setInterval(rain, 50);
 function rain() {
     let cloud = document.querySelector('.cloud');
     let e = document.createElement('div');
