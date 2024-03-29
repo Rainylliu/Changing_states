@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 :root {
     --background-start: rgb(12, 21, 34);
     --background-end: rgb(144, 150, 159);
@@ -27,6 +29,18 @@ html,
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.title {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .cloud_border {
     width: 100%;
@@ -215,21 +229,25 @@ html,
     left: 110px;
     transform: translateY(-50%); 
     font-size: 15px; 
-    font-weight: 200px;
-    color: #d22950; 
-    text-shadow: rgb(249, 192, 216) 1px 0 10px;
+    color: #e7456b; 
+    /* text-shadow: rgb(249, 192, 216) 1px 0 10px; */
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 .cloud-exp {
     position: absolute;
-    width: 160px;
+    width: 240px;
     text-align: center;
     top: 130px; 
-    left: 120px;
+    left: 90px;
     transform: translateY(-50%); 
-    font-size: 15px; 
-    font-weight: 200px;
-    color: #d22950; 
-    text-shadow: rgb(249, 192, 216) 1px 0 10px;
+    font-size: 20px; 
+    color: #e7456b; 
+    /* text-shadow: rgb(249, 192, 216) 1px 0 10px; */
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 @keyframes moveCloud3 {
     0%, 100% {
